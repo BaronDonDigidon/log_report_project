@@ -1,4 +1,4 @@
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 from .utils import filter_by_date
 
 @filter_by_date
@@ -25,7 +25,7 @@ def analyze(logs: List[Dict[str, Any]], date=None) -> Dict[str, Dict[str, float]
     return stats
 
 
-def average_stats(stats_dict: Dict[str, Dict[str, int]]) -> List[List[str, int, float]]:
+def average_stats(stats_dict: Dict[str, Dict[str, int]]) -> List[Tuple[str, int, float]]:
     """
     Создает список списков с общим количеством запросов по эндпоинтам и средним временем отлика.
     :param stats_dict:

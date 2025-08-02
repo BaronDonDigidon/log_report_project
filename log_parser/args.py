@@ -16,7 +16,7 @@ def args_parser() -> argparse.Namespace:
         help="Тип отчёта "
     )
     parser.add_argument(
-        "--data", default=None,
+        "--date", default=None,
         help="Дата записи в формате: yyyy-mm-dd (необязательный параметр)"
     )
     return parser.parse_args()
